@@ -1,0 +1,17 @@
+name: Crates
+version: ${project.version}
+main: crafterryan04.me.cratesplugin.Cratesplugin
+authors: [CrafterRyan04]
+description: "Crates"
+commands:
+  crates:
+    description: ""
+    permission: "crates.crates"
+  keys:
+    description: ""
+    permission: "crates.keys"
+  cratesreload:
+    description: ""
+    permission: "crates.reload"
+  cratesversion:
+    description: ""
