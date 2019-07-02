@@ -1,0 +1,121 @@
+## This version should match the "/cratesversion" exactly, if it does not then you need to either send your current config to me to add parameters or delete this file and "/cratesreload", unless for some reason you feel like doing it yourself, then fuck with it all you want ##
+version: 3.2.04_BETA
+
+########################################################
+#                   {Customization}                    #
+#                    -------------                     #
+########################################################
+
+## Doesn't really matter, user doesn't get to see GUI of chest anyways ##
+## WARNING: DO NOT NAME THIS "Barrel". ALSO: if you rename this then you will need to change out any crates you may have placed ##
+rare-crate-name: "&cLegendary Crate!"
+5-crate-name: "&a5 Key Crate"
+10-crate-name: "&a10 Key Crate"
+25-crate-name: "&a25 Key Crate"
+50-crate-name: "&a50 Key Crate"
+
+
+
+## Message displayed for anyone who has too much in their inventory and cant fit keys/chests ##
+not-enough-inventory-space: "&cSorry, but your inventory is full!"
+
+## Message displayed if you typed some unknown funky ass command for /crates, or if you just typed /crates    ##
+## also, but a "\" before any quotation marks so the YAML doesn't recognize it as formatting, just a hint ^-^ ##
+invalid-crates-command: "&cUsage: \"/crates get [5, 10 ,25 ,50 , rare]\""
+
+
+## Name that shows up on ordinary keys, this name has a &r in front of it that you cant see, if you have this as a voting reward, make sure you put the key into the Voting system as &r&6Key for example ##
+## WARNING: Same as the chests, if you change this, you'll need whole new keys ##
+key-name: "&6Key"
+
+## Same warnings for the normal key as legendary ##
+rare-key-name: "&cLegendary Key"
+
+## The message when you get when receiving keys? ##
+recieved-keys-message: "&aYou've gotten key(s)!"
+
+
+########################################################
+#                       {Rewards}                      #
+#                        -------                       #
+########################################################
+
+## This took soooo long to create, 3/4 of the plugin is trying to include this ##
+
+## You can add some more prizes and items as you wish, but just make sure they're called prize1 prize2 prize3 in order, and start with 1 like they are, you mess that up you mess up the rewards
+
+## Also, if someone has too much inventory I need to work on a safeguard, but for now they will just be screwed until they get more keys, so you might wanna put a thing somewhere on that
+
+## FORMAT
+
+#cratename:
+# prize1:
+#   item1:
+#     item: ITEM_NAME
+#     name: Custom name, can be anything
+#     amount: The number of items in the stack
+#   item2: second item
+#     item: ITEM_NAME
+#     name: Custom Name
+#     amount: # of items in stack
+#   item3:
+#   ETC...
+# prize2:
+# ETC...
+
+
+rare-crate:
+  prize1:
+    item1:
+      item: "DIRT"
+      name: "&5Magical Dirt"
+      amount: "7"
+    item2:
+      item: "CACTUS"
+      name: "&2Magical Cactus"
+      amount: "5"
+  prize2:
+    item1:
+      item: "SAND"
+      name: "&5Magical Dirt"
+      amount: "7"
+    item2:
+      item: "GRAVEL"
+      name: "&2Magical Cactus"
+      amount: "5"
+
+
+5-crate:
+  prize1:
+    item1:
+    item2:
+  prize2:
+    item1:
+    item2:
+
+
+10-crate:
+  prize1:
+    item1:
+    item2:
+  prize2:
+    item1:
+    item2:
+
+
+25-crate:
+  prize1:
+    item1:
+    item2:
+  prize2:
+    item1:
+    item2:
+
+
+50-crate:
+  prize1:
+    item1:
+    item2:
+  prize2:
+    item1:
+    item2:
